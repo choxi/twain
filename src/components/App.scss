@@ -1,12 +1,20 @@
-$primaryTypeColor: #333;
+$primaryTypeColor: #666;
 $secondaryTypeColor: #999;
+$backgroundAlt: #e7e7e7;
+
+p {
+  color: $primaryTypeColor;
+  font-family: 'Roboto', sans-serif;
+  line-height: 21px;
+  font-size: 14px;
+}
 
 .Jumbotron {
   text-align: center;
 }
 
 .Header {
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto', sans-serif;
   margin: 10px 0;
   color: $primaryTypeColor;
 }
@@ -25,6 +33,39 @@ $secondaryTypeColor: #999;
   font-weight: lighter;
   font-style: italic;
   color: $secondaryTypeColor;
+}
+
+.Text--quote {
+  color: #5f5f5f;
+}
+
+.Section {
+  padding: 10px;
+}
+
+.Section--alt {
+  background: $backgroundAlt;
+  text-align: center;
+}
+
+.Features {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Features__feature {
+  width: 200px;
+}
+
+.Badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: $backgroundAlt;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 6px;
+  color: white;
 }
 
 .pull-up {
