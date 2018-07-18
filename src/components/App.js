@@ -8,8 +8,8 @@ export default class App extends Component {
     return (
       <div className="Twain">
         <div className="Jumbotron">
-          <h1>Twain</h1>
-          <h2>Get your copy reviewed by a professional writer.</h2>
+          <h1 className="Header Header--title">Twain</h1>
+          <h2 className="Header Header--secondary pull-up">Professional copy-editing as a service</h2>
         </div>
       </div>
     )
