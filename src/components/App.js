@@ -1,10 +1,51 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Airtable from 'airtable'
 
 import './App.scss'
 
+const db = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(process.env.AIRTABLE_BASE)
+const subscriptions = db(process.env.AIRTABLE_SUBSCRIPTIONS_TABLE)
+
 export default class App extends Component {
-  render() {
+  state = { subscribed: false }
+
+  subscribe = () => {
+    const email = this.emailInput.value
+    subscriptions.create({ email }, (err, record) => {
+        if(err)
+          console.log(err)
+
+        this.setState({ subscribed: true })
+      }
+    )
+  }
+
+  renderSubscribeForm = () => {
+    if (this.state.subscribed) {
+      return (
+        <div>
+          <h6 className="Text--success">
+            Thanks for subscribing! You should receive an invite within the next week.
+          </h6>
+        </div>
+      )
+    }
+
+    return (
+      <div>
+        <p>
+          <input ref={node => this.emailInput = node} type="text" placeholder="email address" />
+        </p>
+
+        <p>
+          <button onClick={this.subscribe}>Subscribe</button>
+        </p>
+      </div>
+    )
+  }
+
+  render = () => {
     return (
       <div className="Twain">
         <div className="Jumbotron">
@@ -13,11 +54,11 @@ export default class App extends Component {
         </div>
 
         <div className="Section Section--alt">
-          <p class="Text--quote">
+          <p className="Text--quote">
             "The difference between the right word and the almost right word
             is the difference between lightning and a lightning bug."
           </p>
-          <p class="Text--quote">
+          <p className="Text--quote">
             &mdash; Mark Twain
           </p>
         </div>
@@ -90,19 +131,9 @@ export default class App extends Component {
 
         <div className="Section Section--cta">
           <h1>Try it for free</h1>
-          <h6>Sign up on the waiting list and get one free review when we launch</h6>
+          <h6>Sign up on the waiting list and get one free review when we launch.</h6>
 
-          <p>
-            <input type="text" placeholder="email address" />
-          </p>
-
-          <p>
-            <input type="text" placeholder="password" />
-          </p>
-
-          <p>
-            <button>Sign Up</button>
-          </p>
+          { this.renderSubscribeForm() }
         </div>
 
         <div className="Section Section--footer">
