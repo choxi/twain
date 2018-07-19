@@ -38,6 +38,39 @@ export default class App extends Component {
             </div>
           </div>
         </div>
+
+        <div className="Section Section--alt">
+          <div className="Page">
+            <p>
+              <span className="Text--strikethrough Text--highlight">
+                Effective communication is one of today's most valuable skills. Whether you're
+                writing a blog post, content marketing, or an email; the value of good
+                articulation has never been higher.
+              </span>
+            </p>
+
+            <p>
+              <span className="Text--highlight--alt">
+                Though most readers can distinguish between good and bad writing when they see it,
+                they are uncertain about what goes into great writing.
+              </span>
+
+              Great writing has rhythm. If
+              your sentences are long and drawn out, crawling towards the point they make, seemingly
+              with no end -- that wouldn't be very engaging. Break them up. Use short sentences sometimes.
+            </p>
+
+            <p>
+              The best writing isn't riddled with &nbsp;
+              <span className="Text--highlight">labyrinthine words and resplendent terminology.</span> &nbsp;
+              If your goal is to communicate an idea to your audience, keep your writing clear, simple, and authentic.
+            </p>
+
+            <p>
+              As the great Mark Twain once said: "Writing is easy. All you have to do is cross out the wrong words.
+            </p>
+          </div>
+        </div>
       </div>
     )
   }
