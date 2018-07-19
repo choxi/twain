@@ -75,7 +75,7 @@ export default class App extends Component {
             </div>
 
             <div className="Annotation Annotation--alt Annotation--2">
-              <p>This is called “backing into a sentence” and makes it difficult to read.</p>
+              <p>This is called “backing into a sentence” and makes the sentence difficult to read. Try rephrasing it to put the subject first.</p>
             </div>
 
             <div className="Annotation Annotation--3">
