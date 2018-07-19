@@ -81,11 +81,44 @@ p {
   margin: 20px auto;
   padding: 10px 30px;
   border-radius: 2px;
+  position: relative;
 }
 
 .Page p {
   line-height: 250%;
   padding: 0 10px;
+}
+
+.Page .Annotation {
+  position: absolute;
+  width: 200px;
+}
+
+.Page .Annotation--1 {
+  top: 31px;
+  left: -220px;
+}
+
+.Page .Annotation--2 {
+  top: 150px;
+  right: -220px;
+}
+
+.Page .Annotation--3 {
+  top: 380px;
+  left: -220px;
+}
+
+.Annotation {
+  background: $primaryHighlight;
+}
+
+.Annotation--alt {
+  background: $secondaryHighlight;
+}
+
+.Annotation p {
+  line-height: 150%;
 }
 
 .Text--highlight {

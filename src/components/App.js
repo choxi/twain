@@ -69,6 +69,18 @@ export default class App extends Component {
             <p>
               As the great Mark Twain once said: "Writing is easy. All you have to do is cross out the wrong words.
             </p>
+
+            <div className="Annotation Annotation--1">
+              <p>Try removing this intro paragraph, still sounds great without it!</p>
+            </div>
+
+            <div className="Annotation Annotation--alt Annotation--2">
+              <p>This is called “backing into a sentence” and makes it difficult to read.</p>
+            </div>
+
+            <div className="Annotation Annotation--3">
+              <p>How about: “complicated words and terminology”?</p>
+            </div>
           </div>
         </div>
       </div>
