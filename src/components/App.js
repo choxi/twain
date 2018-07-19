@@ -30,7 +30,7 @@ export default class App extends Component {
             </div>
             <div className="Features__feature">
               <div className="Badge">2</div>
-              <p>Our editors will review your draft for spelling, grammar, clarity, conciseness, style, and structure.</p>
+              <p>Our editors <span class="Highlight">will review your draft for spelling</span>, grammar, clarity, conciseness, style, and structure.</p>
             </div>
             <div className="Features__feature">
               <div className="Badge">3</div>
