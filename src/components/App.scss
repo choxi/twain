@@ -115,20 +115,25 @@ h6 {
 .Features__feature {
   width: 300px;
   display: flex;
+  p {
+    font-size: 18px;
+    line-height: 150%;
+    color: $secondaryTypeColor;
+  }
 }
 
 .Badge {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: $backgroundAlt;
+  background: $secondaryTypeColor;
   text-align: center;
   box-sizing: border-box;
   padding-top: 6px;
   color: white;
   flex-shrink: 0;
   margin-right: 10px;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .Page {
@@ -163,6 +168,16 @@ h6 {
 .Page .Annotation--3 {
   top: 65%;
   left: -220px;
+}
+
+@media all and (max-width: 736px) { 
+  .Page .Annotation {
+    position: relative;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: auto;
+  }
 }
 
 .Annotation {

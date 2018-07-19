@@ -67,7 +67,7 @@ export default class App extends Component {
             </p>
 
             <p>
-              As the great Mark Twain once said: "Writing is easy. All you have to do is cross out the wrong words.
+              As the great Mark Twain once said: "Writing is easy. All you have to do is cross out the wrong words."
             </p>
 
             <div className="Annotation Annotation--1">
@@ -85,8 +85,8 @@ export default class App extends Component {
         </div>
 
         <div className="Section Section--cta">
-          <h1>Sign up for a free trial</h1>
-          <h6>Get one free review after signing up for an account. No credit card required.</h6>
+          <h1>Try it for free</h1>
+          <h6>Sign up on the waiting list and get one free review when we launch</h6>
 
           <p>
             <input type="text" placeholder="email address" />
