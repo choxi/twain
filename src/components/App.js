@@ -40,6 +40,10 @@ export default class App extends Component {
         </div>
 
         <div className="Section Section--alt">
+          <div className="Section__header">
+            <h1>Write better.</h1>
+            <p>Get feedback from professional copy-editors to improve your writing quality and increase reader engagement.</p>
+          </div>
           <div className="Page">
             <p>
               <span className="Text--strikethrough Text--highlight">
