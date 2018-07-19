@@ -1,9 +1,22 @@
-$primaryTypeColor: #666;
+$primaryTypeColor: #333;
 $secondaryTypeColor: #999;
 $backgroundAlt: #E7E7E7;
 
 $primaryHighlight: #4CDAE3;
 $secondaryHighlight: #D9A0ED;
+
+input[type="text"] {
+  padding: 0.5em 0.75em;
+  font-size: 16px;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  outline: none;
+  min-width: 300px;
+
+  &::placeholder {
+    color: lighten($secondaryTypeColor, 10);
+  }
+}
 
 p {
   color: $primaryTypeColor;
@@ -12,7 +25,35 @@ p {
   font-size: 14px;
 }
 
+button {
+  background: $primaryHighlight;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: $primaryTypeColor;
+  font-weight: lighter;
+  cursor: pointer;
+
+  &:hover {
+    background: lighten($primaryHighlight, 10);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  color: $primaryTypeColor;
+  font-weight: lighter;
+}
+
+h6 {
+  color: $secondaryTypeColor;
+  font-size: 18px;
+}
+
 .Jumbotron {
+  padding: 60px 0;
   text-align: center;
 }
 
@@ -51,9 +92,24 @@ p {
   background: $backgroundAlt;
 }
 
+.Section--cta {
+  h1, h2, h6, p {
+    text-align: center;
+  }
+}
+
+.Section--footer {
+  padding: 50px 0;
+  p {
+    text-align: center;
+    color: $secondaryTypeColor;
+  }
+}
+
 .Features {
   display: flex;
   justify-content: space-around;
+  padding: 40px 0;
 }
 
 .Features__feature {
@@ -95,17 +151,17 @@ p {
 }
 
 .Page .Annotation--1 {
-  top: 31px;
+  top: 5%;
   left: -220px;
 }
 
 .Page .Annotation--2 {
-  top: 150px;
+  top: 26%;
   right: -220px;
 }
 
 .Page .Annotation--3 {
-  top: 380px;
+  top: 65%;
   left: -220px;
 }
 

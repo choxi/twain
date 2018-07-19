@@ -14,8 +14,8 @@ export default class App extends Component {
 
         <div className="Section Section--alt">
           <p class="Text--quote">
-            The difference between the right word and the almost right word
-            is the difference between lightning and a lightning bug.
+            "The difference between the right word and the almost right word
+            is the difference between lightning and a lightning bug."
           </p>
           <p class="Text--quote">
             &mdash; Mark Twain
@@ -82,6 +82,27 @@ export default class App extends Component {
               <p>How about: “complicated words and terminology”?</p>
             </div>
           </div>
+        </div>
+
+        <div className="Section Section--cta">
+          <h1>Sign up for a free trial</h1>
+          <h6>Get one free review after signing up for an account. No credit card required.</h6>
+
+          <p>
+            <input type="text" placeholder="email address" />
+          </p>
+
+          <p>
+            <input type="text" placeholder="password" />
+          </p>
+
+          <p>
+            <button>Sign Up</button>
+          </p>
+        </div>
+
+        <div className="Section Section--footer">
+          <p>Questions? help@twain.app</p>
         </div>
       </div>
     )
